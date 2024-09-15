@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitTo | Crypto</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section start -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="assets/BitTo_logo0-removebg-preview.png" alt="school-logo" />
+          <h1>BitTo</h1>
+        </div>
+        <div class="burger" onclick="toggleNav()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="#programs">Our Programs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section end -->
+
+    <!-- hero section start -->
+    <section class="hero">
+      <div class="overlay">
+        <h1>Welcome to BitTo</h1>
+        <h2>A platform to know more about Crypto.</h2>
+        <p>
+          BitTo is one of the greats in sharing Crypto knowledge. Providing a solid foundation and helping build an undeniable understanding of how cryptocurrencies work.
+        </p>
+        <button onclick="openModal()">Learn More</button>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- Modal Pop-up -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Our Program</h2>
+        <p>
+          BitTo offers a variety of programs designed to equip you
+          with the skills needed to thrive in today's Crypto Space:
+        </p>
+        <ul>
+          <li>Risk Management</li>
+          <li>Technical Analysis</li>
+          <li>Market Analysis</li>
+          <li>Analysis tools</li>
+          <li>Strategy</li>
+        </ul>
+        <p>
+          Join us today and gain hands-on experience with Crypto experts.
+          Our programs are tailored to prepare you for trading challenges.
+        </p>
+      </div>
+    </div>
+
+    <!-- why Crypto section starts -->
+    <section class="why-section">
+      <div class="why-text">
+        <h2>Why Crypto?</h2>
+      </div>
+      <div class="flex-container">
+        <div class="box">
+          <div class="image-box box1">
+            <img
+              src="./assets/Decentralization.png"
+              alt="Decentralization"
+            />
+          </div>
+          <p>Decentralization</p>
+        </div>
+        <div class="box">
+          <div class="image-box box2">
+            <img src="./assets/Inflation hedge.jpg" alt="Inflation hedge" />
+          </div>
+          <p>Inflation hedge</p>
+        </div>
+        <div class="box">
+          <div class="image-box box3">
+            <img
+              src="./assets/security.png"
+              alt="security"
+            />
+          </div>
+          <p>security</p>
+        </div>
+        <div class="box">
+          <div class="image-box box4">
+            <img
+              src="./assets/transparency.jpg"
+              alt="Transparency"
+            />
+          </div>
+          <p>Transparency</p>
+        </div>
+      </div>
+      <div class="why-btn">
+        <a href="">learn more about what makes us special</a>
+      </div>
+    </section>
+
+    <!-- why Crypto section ends -->
+
+    <!-- Carousel Section start-->
+    <section class="carousel-section">
+      <div class="carousel-text">
+        <h2>Our Community</h2>
+        <p>
+          An insight into our community.
+        </p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <img src="./assets/trade1.jpg" alt="traders" />
+          <img
+            src="./assets/trade2.jpg"
+            alt="traders"
+          />
+          <img
+            src="./assets/trade3.jpg"
+            alt="trader"
+          />
+          <img
+            src="./assets/trade4.jpg"
+            alt="trader"
+          />
+          <img src="./assets/hero-background.jpg" alt="class room" />
+        </div>
+        <button class="carousel-btn prev" onclick="prevSlide()">
+          &#10094;
+        </button>
+        <button class="carousel-btn next" onclick="nextSlide()">
+          &#10095;
+        </button>
+      </div>
+    </section>
+    <!-- Carousel Section stop-->
+
+    <!-- Accordion Section start-->
+    <section class="accordion-section" id="programs">
+      <h1>Our Programs <span>&#10095;</span> Let's start here</h1>
+      <h2>Let's start here</h2>
+      <p>
+        We have prepared a list of frequently asked questions to onboard our newbies.
+      </p>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-button">What is cryptocurrency?</button>
+          <div class="accordion-content">
+            <p>
+              Cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services or traded for a profit. Bitcoin is the most widely used cryptocurrency.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">Is Blockchain differnet from bitcoin?</button>
+          <div class="accordion-content">
+            <p>
+              Blockchain is the technology that enables the existence of cryptocurrency (among other things). Bitcoin is the name of the most recognized cryptocurrency, the one for which blockchain technology, as we currently know it, was created.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">What is Blockchain?</button>
+          <div class="accordion-content">
+            <p>
+              Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">What is Crypto wallet?</button>
+          <div class="accordion-content">
+            <p>
+              Crypto wallets store your private keys and keep your crypto safe and accessible for spending, sending, or saving.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button">
+            What is Crypto mining?
+          </button>
+          <div class="accordion-content">
+            <p>
+              Crypto mining is a process blockchain networks, like Bitcoin and other cryptocurrencies, use to finalize transactions. It's called mining because this process also releases new coins into circulation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Accordion Section end-->
+
+    <!-- Interactive Map Section start-->
+    <section class="contact-map-section" id="contact">
+      <h2>Contact</h2>
+      <div class="main-container">
+        <div class="contactus-container">
+          <h2>Contact Us</h2>
+          <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message..."></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+          <p id="errorMessage"></p>
+        </div>
+        <div class="map-container">
+          <h2>Our Location</h2>
+          <!-- <div id="map"></div> -->
+          <!-- Place the iframe here -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d676917.2006259214!2d3.520427871971618!3d6.473656245688074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf75df5c74367%3A0x6a7e7df9d6c1cd4a!2sLekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1726257145110!5m2!1sen!2sng"
+            width="80%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Interactive Map Section end-->
+
+    <!-- Footer Section start-->
+    <footer>
+      <p>&copy; 2024 BitTo, bit by bit to Crypto Apex.</p>
+    </footer>
+    <!-- Footer Section end-->
+
+    <script src="./script.js"></script>
+
+    <!-- Add Google Maps API script here -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>
